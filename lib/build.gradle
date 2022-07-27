@@ -13,7 +13,7 @@ repositories {
 task("testissuetask", type: GradleBuild) {
 	buildName = file("lib/build.gradle")
 	tasks = ["build"]
-	getStartParameter().setExcludedTaskNames(["test"])
+	getStartParameter().setExcludedTaskNames([":lib:test"])
 }
 
 dependencies {
